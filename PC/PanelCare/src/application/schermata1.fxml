@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="vBox" fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="58.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mainController">
+  <children>
+    <MenuBar id="menuBar" fx:id="menuBar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu id="menuF" fx:id="menuF" mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem id="mNew" fx:id="mNew" mnemonicParsing="false" text="New" />
+            <MenuItem id="mOpen" fx:id="mOpen" mnemonicParsing="false" onAction="#openVideo" text="Open video" />
+            <Menu id="mOpenRecent" fx:id="mOpenRecent" mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem id="mClose" fx:id="mClose" mnemonicParsing="false" text="Close" />
+            <MenuItem id="mSave" fx:id="mSave" mnemonicParsing="false" text="Save" />
+            <MenuItem id="mSaveAs" fx:id="mSaveAs" mnemonicParsing="false" text="Save As…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem id="mPr" fx:id="mPr" mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem id="mQuit" fx:id="mQuit" mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu id="menuE" fx:id="menuE" mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem id="mUndo" fx:id="mUndo" mnemonicParsing="false" text="Undo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem id="mCut" fx:id="mCut" mnemonicParsing="false" text="Cut" />
+            <MenuItem id="mCopy" fx:id="mCopy" mnemonicParsing="false" text="Copy" />
+            <MenuItem id="mPaste" fx:id="mPaste" mnemonicParsing="false" text="Paste" />
+            <MenuItem id="mDelete" fx:id="mDelete" mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem id="mSelect" fx:id="mSelect" mnemonicParsing="false" text="Select All" />
+            <MenuItem id="mUnselect" fx:id="mUnselect" mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu id="menuH" fx:id="menuH" mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem id="mHelpp" fx:id="mHelpp" mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ToolBar prefHeight="40.0" prefWidth="640.0">
+              <items>
+                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" />
+                  <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" />
+                  <Button layoutX="47.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" />
+                  <Button layoutX="47.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" />
+                  <Button layoutX="84.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" />
+              </items>
+            </ToolBar>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

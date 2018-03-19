@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loadVideoController">
+  <children>
+    <AnchorPane id="panel" fx:id="panel" maxHeight="-1.0" maxWidth="-1.0" prefHeight="296.0" prefWidth="458.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="138.0" layoutY="19.0" prefHeight="42.0" prefWidth="176.0" text="Carica qui il tuo video">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <TextField id="pathVideo" fx:id="pathVideo" layoutX="61.0" layoutY="94.0" prefHeight="25.0" prefWidth="255.0" />
+            <Button id="browse" fx:id="browse" layoutX="336.0" layoutY="94.0" mnemonicParsing="false" onAction="#cercaVideo" text="Browse" />
+            <Button fx:id="elabora" layoutX="112.0" layoutY="150.0" mnemonicParsing="false" onAction="#elaboraVideo" text="Elabora" />
+            <Button id="ann" fx:id="ann" layoutX="301.0" layoutY="150.0" mnemonicParsing="false" onAction="#annulla" text="Annulla" />
+            <ProgressBar id="load" fx:id="load" layoutX="126.0" layoutY="194.0" prefWidth="200.0" progress="0.0" />
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+    </AnchorPane>
+  </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</VBox>
